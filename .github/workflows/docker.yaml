@@ -26,8 +26,7 @@ jobs:
         
     - name: Build the Vampi Docker image
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+ 
         docker build . --file Dockerfile --tag test/vampi_docker:latest
 #        docker build . --file Dockerfile --tag vampi_docker:latest
         
